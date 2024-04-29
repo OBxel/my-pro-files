@@ -1,0 +1,19 @@
+#presentation {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+#presentation .container {
+  text-align: center;
+}
+
+#presentation h2 {
+  font-size: 2rem;
+  color: #333333;
+}
+
+#presentation p {
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,42 @@
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavLink {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.NavLink:hover,
+.active {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.rightLinks {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  .NavLink {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
