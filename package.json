@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "craco build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -48,8 +48,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/plugin-transform-private-property-in-object": "^7.24.1",
-    "@babel/plugin-transform-unicode-regex": "^7.24.1",
     "gh-pages": "^6.1.1"
   }
 }
