@@ -1,5 +1,5 @@
 import React from "react";
-import "../../components/Home/Presentation.css";
+import "./presentation.css";
 
 function Presentation() {
   return (
@@ -8,14 +8,14 @@ function Presentation() {
         <h2> Presentation </h2>
         <p>
           {" "}
-          Bienvenue sur ma page d'accueil! Je m'appelle Olivier Brulé, je suis
-          un développeur fullstack(JAVA) passionné par la création d'application
+          Bienvenue sur ma page d'accueil! Je m'appelle Olivier BrulÃ©, je suis
+          un dÃ©veloppeur fullstack(JAVA) passionnÃ© par la crÃ©ation d'application
           web.{" "}
         </p>
         <p>
           {" "}
           Dans cette section, vous pouvez en apprendre d'avantage sur moi et mes
-          compétences en développement.
+          compÃ©tences en dÃ©veloppement.
         </p>
       </div>
     </section>
