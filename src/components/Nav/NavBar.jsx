@@ -9,7 +9,7 @@ function Navbar() {
         <li>
           <NavLink
             exact="true"
-            to="/home"
+            to="/my-pro-files/home"
             className="NavLink"
             activeclassname="active"
           >
@@ -19,7 +19,7 @@ function Navbar() {
         <div className="rightLinks">
           <li>
             <NavLink
-              to="/projects"
+              to="/my-pro-files/projects"
               className="NavLink"
               activeclassname="active"
             >
@@ -27,7 +27,11 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="NavLink" activeclassname="active">
+            <NavLink
+              to="/my-pro-files/contact"
+              className="NavLink"
+              activeclassname="active"
+            >
               Contact
             </NavLink>
           </li>
