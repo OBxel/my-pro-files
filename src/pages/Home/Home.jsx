@@ -1,17 +1,25 @@
 import React from "react";
-import Presentation from "../../components/Home/Presentation";
+import Presentation from "../../components/Home/Intro/Presentation";
+import TechFront from "../../components/Home/Front/TechFront";
+import TechBack from "../../components/Home/Back/TechBack";
 
 import "./Home.css";
 
 function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>Bienvenue sur la page d'accueil de notre blabla application.</p>
-      <Presentation />
-      
-      <div>Tech front</div>
-      <div>tech back</div>
+      <div className="presentationContainer">
+        <Presentation />
+      </div>
+
+      <div className="techContainer">
+        <div className="techFront">
+          <TechFront />
+        </div>
+        <div className="techBack">
+          <TechBack />
+        </div>
+      </div>
     </div>
   );
 }

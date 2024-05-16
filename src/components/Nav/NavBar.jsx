@@ -9,7 +9,7 @@ function Navbar() {
         <li>
           <NavLink
             exact="true"
-            to="/"
+            to="/home"
             className="NavLink"
             activeclassname="active"
           >

@@ -5,8 +5,55 @@ body {
   padding: 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* Animation pour les éléments venant du top */
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.presentationContainer {
+  animation: slideFromTop 1s ease;
+}
+
+/* Zone des Tech */
+
+.techContainer {
+  display: flex;
+}
+
+/* Animation pour les éléments venant de gauche */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.techFront {
+  flex: 1;
+  animation: slideInFromLeft 1s ease;
+}
+
+/* Animation pour les éléments venant de droite */
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.techBack {
+  flex: 1;
+  animation: slideInFromRight 1s ease;
 }
