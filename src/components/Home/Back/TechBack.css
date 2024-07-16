@@ -1,0 +1,70 @@
+#techBack {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#techBack .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#techBack h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.techBack-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.techBack-list {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  list-style-type: disc;
+  padding-left: 40px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+}
+
+#techBack li {
+  /* text-align: center; */
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Media Queries pour les appareils mobiles */
+@media only screen and (max-width: 1024px) {
+  #techBack {
+    padding: 20px 10px;
+    margin-bottom: 15px;
+  }
+
+  .techBack-list {
+    width: 100%;
+  }
+
+  #techBack h2 {
+    font-size: 1.5rem;
+  }
+
+  #techBack li {
+    font-size: 0.9rem;
+  }
+}

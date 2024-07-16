@@ -16,6 +16,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Navigate to="/my-pro-files/home" />} />
           <Route path="/my-pro-files/home" element={<Home />} />
           <Route
             path="/my-pro-files"

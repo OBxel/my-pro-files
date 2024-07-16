@@ -3,9 +3,18 @@ import "./TechFront.css";
 
 function TechFront() {
   return (
-    <section>
-      <div>technologie front 1</div>
-      <div> technologie front 2</div>
+    <section id="techFront">
+      <div className="container">
+        <h2>Mes technologies Front</h2>
+      </div>
+      <div className="techFront-container">
+        <div className="techFront-list">
+          <li>Javascript (ES6)</li>
+          <li>CSS3 / Sass</li>
+          <li>HTML5</li>
+          <li>Framework: React</li>
+        </div>
+      </div>
     </section>
   );
 }

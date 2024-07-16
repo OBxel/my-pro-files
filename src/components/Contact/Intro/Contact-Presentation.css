@@ -1,4 +1,4 @@
-#techFront {
+#contact-presentation {
   background-color: #ffffff;
   padding: 40px 20px;
   position: relative;
@@ -8,14 +8,13 @@
   margin-bottom: 20px;
 }
 
-#techFront .container {
-  max-width: 800px;
+#contact-presentation .container {
   margin: 0 auto;
   text-align: center;
 }
 
-#techFront h2 {
-  font-size: 1.5rem;
+#contact-presentation h2 {
+  font-size: 2rem;
   color: #2c3e50;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -23,25 +22,7 @@
   font-weight: bold;
 }
 
-.techFront-container {
-  display: flex;
-  width: 80%;
-  justify-content: space-around;
-  margin: 0 auto;
-}
-
-.techFront-list {
-  border: 2px solid #333;
-  border-radius: 10px;
-  padding: 20px;
-  list-style-type: disc;
-  padding-left: 40px;
-  background-color: #f7f7f7;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 45%;
-}
-
-#techFront li {
+#contact-presentation p {
   font-size: 1.1rem;
   color: #34495e;
   margin-bottom: 20px;
@@ -50,20 +31,16 @@
 
 /* Media Queries pour les appareils mobiles */
 @media only screen and (max-width: 1024px) {
-  #techFront {
-    padding: 20px 10px;
+  #contact-presentation {
     margin-bottom: 15px;
+    padding: 20px 10px;
   }
 
-  .techFront-list {
-    width: 100%;
-  }
-
-  #techFront h2 {
+  #contact-presentation h2 {
     font-size: 1.5rem;
   }
 
-  #techFront li {
+  #contact-presentation p {
     font-size: 0.9rem;
   }
 }

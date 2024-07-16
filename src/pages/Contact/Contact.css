@@ -1,7 +1,6 @@
 @import url("../../style/index.css");
 
 /* Animation pour les éléments venant du top */
-
 @keyframes slideFromTop {
   0% {
     transform: translateY(-100%);
@@ -12,7 +11,6 @@
 }
 
 /* Animation pour les éléments venant de gauche */
-
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -23,7 +21,6 @@
 }
 
 /* Animation pour les éléments venant de droite */
-
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
@@ -33,11 +30,9 @@
   }
 }
 
-/* Styles communs pour les conteneurs avec animation slideFromTop */
-
-.presentationContainer,
-.collabContainer,
-.compContainer {
+/* Common styles for animated containers */
+.present-Container,
+.coord-Container {
   animation: slideFromTop 1s ease;
   background-color: #def3f5;
   padding: 20px;
@@ -46,59 +41,51 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Zone des Tech */
-
-.techContainer {
+.coord-Container {
   display: flex;
   gap: 20px;
+}
+
+.contact-form-container {
+  flex: 1;
+  animation: slideInFromLeft 1s ease;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
-
-.techFront {
-  flex: 1;
-  animation: slideInFromLeft 1s ease;
-  background-color: #def3f5;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.techBack {
+.contact-coord-container {
   flex: 1;
   animation: slideInFromRight 1s ease;
-  background-color: #def3f5;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-/* Media Queries */
-
+/* Media Queries for mobile devices */
 @media only screen and (max-width: 1024px) {
-  .presentationContainer,
-  .collabContainer,
-  .compContainer {
+  .present-Container,
+  .coord-Container {
     width: 90%;
     margin: 0 auto 20px auto;
     padding: 15px;
   }
 
-  .techContainer {
+  .coord-Container {
     flex-direction: column;
     gap: 10px;
   }
 
-  .techFront,
-  .techBack {
-    width: 90%;
-    margin: 0 auto;
+  .contact-form-container,
+  .contact-coord-container {
+    width: 100%;
   }
 
-  .presentationContainer h1,
-  .collabContainer h1,
-  .compContainer h1 {
+  .present-Container h1 {
     font-size: 1.5em;
   }
 }

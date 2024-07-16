@@ -2,6 +2,8 @@ import React from "react";
 import Presentation from "../../components/Home/Intro/Presentation";
 import TechFront from "../../components/Home/Front/TechFront";
 import TechBack from "../../components/Home/Back/TechBack";
+import Competences from "../../components/Home/Skills/Competences";
+import Collab from "../../components/Home/Collab/Collab";
 
 import "./Home.css";
 
@@ -19,6 +21,12 @@ function Home() {
         <div className="techBack">
           <TechBack />
         </div>
+      </div>
+      <div className="collabContainer">
+        <Collab />
+      </div>
+      <div className="compContainer">
+        <Competences />
       </div>
     </div>
   );

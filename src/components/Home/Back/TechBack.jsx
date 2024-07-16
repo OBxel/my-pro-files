@@ -3,9 +3,18 @@ import "./TechBack.css";
 
 function TechBack() {
   return (
-    <section>
-      <div> technologie back 1</div>
-      <div> technologie back 2</div>
+    <section id="techBack">
+      <div className="container">
+        <h2> Mes technologies back</h2>
+      </div>
+      <div className="techBack-container">
+        <div className="techBack-list">
+          <li>Node</li>
+          <li>MongoDB</li>
+          <li>Cloudinary</li>
+          <li>Framework: Express</li>
+        </div>
+      </div>
     </section>
   );
 }

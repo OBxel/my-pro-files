@@ -1,4 +1,4 @@
-#presentation {
+#projectPresentation {
   background-color: #ffffff;
   padding: 40px 20px;
   position: relative;
@@ -8,12 +8,12 @@
   margin-bottom: 20px;
 }
 
-#presentation .container {
+#projectPresentation .projectIntroContainer {
   margin: 0 auto;
   text-align: center;
 }
 
-#presentation h2 {
+#projectPresentation h2 {
   font-size: 2rem;
   color: #2c3e50;
   margin-bottom: 20px;
@@ -22,25 +22,24 @@
   font-weight: bold;
 }
 
-#presentation p {
+#projectPresentation p {
   font-size: 1.1rem;
   color: #34495e;
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
-/* Media Queries pour les appareils mobiles */
 @media only screen and (max-width: 1024px) {
-  #presentation {
+  #projectPresentation {
     margin-bottom: 15px;
     padding: 20px 10px;
   }
 
-  #presentation h2 {
+  #projectPresentation h2 {
     font-size: 1.5rem;
   }
 
-  #presentation p {
+  #projectPresentation p {
     font-size: 0.9rem;
   }
 }

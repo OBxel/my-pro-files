@@ -1,17 +1,36 @@
+/* Styles de base pour le corps */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e2e4e4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Réinitialiser les styles par défaut pour une meilleure cohérence entre les navigateurs */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles pour la barre de navigation */
 nav {
   background-color: #333;
   padding: 10px 0;
   margin: 0 auto;
   position: relative;
   z-index: 300;
+  width: 100%;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .NavLink {
@@ -32,13 +51,53 @@ ul {
   display: flex;
 }
 
-@media (max-width: 768px) {
-  nav {
-    padding: 10px;
-  }
+/* Styles pour le menu hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 15px;
+}
 
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+/* Media Queries pour les appareils mobiles */
+@media only screen and (max-width: 1024px) {
   .NavLink {
     font-size: 16px;
     padding: 8px 12px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  .rightLinks {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .NavLink {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
   }
 }
